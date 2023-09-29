@@ -1,14 +1,19 @@
 name: Bug
 description: File a bug report
+title: "[BUG] <title>"
+labels: ["bug", "cicd", "ui", "core"]
+projects: ["Swarmies/Shoes Project"]
+assignees:
+  - kirubeltadesse
+  - roberamelaek
 body:
-  - type: markdown
+  - type: checkboxes
     attributes:
-      value: |
-        Before opening a bug report, please search for the behaviour in the existing issues.
-
-        ---
-
-        Thank you for taking the time to file a bug report. To address this bug as fast as possible, we need some information.
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for this bug you encountered.
+      options:
+        - label: I have searched the existing issues
+          required: true
   - type: input
     id: os
     attributes:
@@ -18,29 +23,21 @@ body:
     validations:
       required: true
   - type: input
-    id: laravel
+    id: python
     attributes:
-      label: Laravel Version
-      description: "Please provide the full Laravel version of your project."
-      placeholder: "v8.6.1"
-    validations:
-      required: true
-  - type: input
-    id: php
-    attributes:
-      label: PHP Version
-      description: "Please provide the full PHP version that is powering Tinkerwell."
-      placeholder: "PHP 8.0.7, built: Jun  4 2021 01:50:04"
+      label: python Version
+      description: "Please provide the full Python version of your project."
+      placeholder: "v3.10.5"
     validations:
       required: true
   - type: dropdown
     id: location
     attributes:
       label: Project Location
-      description: Where is the project located?
+      description: How are you running the project?
       options:
         - Local
-        - Remote
+        - Inside Docker Container
         - Somewhere else (please specify in the description!)
     validations:
       required: true
@@ -48,9 +45,15 @@ body:
     id: bug-description
     attributes:
       label: Bug description
-      description: What happened?
+      description: A concise description of what you're experiencing.
     validations:
       required: true
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: A concise description of what you expected to happen.
+    validations:
+      required: false
   - type: textarea
     id: steps
     attributes:
