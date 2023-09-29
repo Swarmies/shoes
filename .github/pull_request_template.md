@@ -1,6 +1,10 @@
 ---
 name: "feat(core): <description>"
+<<<<<<< HEAD
 about: "Use this template for setting up your PR description"
+=======
+about: "Use this template for setting up your PR description."
+>>>>>>> 90f6a91 ( change new-feature template to yml)
 title: "Add support for the new feature"
 labels: bug, enhancement, customer-request
 assignees: self
