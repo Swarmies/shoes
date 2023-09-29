@@ -1,8 +1,8 @@
 name: Bug
 description: File a bug report
 title: "[BUG] <title>"
-labels: ["bug", "cicd", "ui", "core"]
-projects: ["Swarmies/Shoes Project"]
+labels: ["bug", "documentation", "core", "enhancement"]
+projects: ["Shoes Project"]
 assignees:
   - kirubeltadesse
   - roberamelaek
