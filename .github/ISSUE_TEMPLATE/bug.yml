@@ -1,12 +1,9 @@
 name: Bug
 description: File a bug report
 title: "[BUG] <title>"
-<<<<<<< HEAD
 labels: ["bug", "documentation", "core", "enhancement"]
-=======
 labels: ["bug", "documentation", "cicd", "core", "enhancement"]
->>>>>>> 90f6a91 ( change new-feature template to yml)
-projects: ["Shoes Project"]
+projects: "Shoes Project"
 assignees:
   - kirubeltadesse
   - roberamelaek
