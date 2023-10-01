@@ -1,4 +1,4 @@
-name: :lady_beetle Bug
+name: 🐞 Bug
 description: File a bug report
 title: "[BUG] <title>"
 labels: ["bug", "documentation", "cicd", "core", "enhancement"]
