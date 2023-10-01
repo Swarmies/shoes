@@ -1,7 +1,7 @@
 name: New Feature
 description: A new feature that needs to be developed
 title: "[UI/CORE] <title>"
-labels: ["bug", "cicd", "ui", "core"]
+labels: ["new-feature", "documentation", "cicd", "core", "enhancement"]
 projects: ["Shoes Project"]
 assignees:
   - kirubeltadesse
