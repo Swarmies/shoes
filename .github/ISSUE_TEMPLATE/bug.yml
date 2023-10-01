@@ -1,9 +1,8 @@
-name: Bug
+name: Bug :lady_beetle
 description: File a bug report
 title: "[BUG] <title>"
-labels: ["bug", "documentation", "core", "enhancement"]
 labels: ["bug", "documentation", "cicd", "core", "enhancement"]
-projects: "Shoes Project"
+projects: ["Shoes Project"]
 assignees:
   - kirubeltadesse
   - roberamelaek
